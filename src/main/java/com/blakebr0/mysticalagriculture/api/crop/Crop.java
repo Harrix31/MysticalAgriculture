@@ -408,7 +408,7 @@ public class Crop {
         if (block instanceof IEssenceFarmland)
             chance += this.baseSecondaryChance > -1 ? this.baseSecondaryChance : this.tier.getBaseSecondaryChance();
         if (this.respectsEffectiveFarmland && this.getTier().isEffectiveFarmland(block))
-            chance += 0.1;
+            chance += 0.3;
 
         return Math.min(chance, 1.0);
     }
